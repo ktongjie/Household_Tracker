@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mojuan Household">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAIkUlEQVR4nO3d2U9UZxjH8YdhB0UFRSsurVpSi3VB6gKyzyBJ3draKjq9MdGL3jZNemF60TT9B5reeFl3U7QuTSwwwkCBClXQKlpqxYIrigIFkcU5vTAx5sw8Or5nmXlffp8rc+A974l8Oc5555wxYpHbTQCBOEJ9ABC+EAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewEAewokIy696vdy98c64Ve95z/OSe4yes2PMrZaan7/nqS4t2nrVjp0V7fgnVzhyfFBXEREeHZOrta10hmdc6qsUxZeLED7JX2T/vnOmpuUuX2D+vpVSLg4jKXM6IiAibJ91W4nLYPqnVFIxj3syZqxdl2DljUmLiupxsO2e0h4JxEJF7bYmd020uLIiLibFzRnuE5mrls2++5b70+Uebdqz7wOD+V7y7cMGstGs3bxncTzCio6K2FBca34+3pfWL738wvh8TqXnmIKLtdp08SleuSJk0yZ65bKZsHLb9zGyr0H7KxmHW2f7lVmVkLJiVZvUsoaJsHET0cUF+bIy1C2LuUtUWvl4kRxz9g48FRk2aMGFdtoVXmPPT0lZl6K+Z+wcHrZvRZnLEcdTrFRu4rcTCBbGA6+XlNYKHGobkiOPS9Y6L1/4RGDh3xow1i98z/XiIKDkpqXTVSt3Gzrv36lovWjFdSMgRBxHt+7VCbKBF74dtKS6KidKvEh2orNJIs2K6kJAmjprzLbcfPBAYmPXOO+lzZpt7MLEx0ZsL83Ub+wYGTtU3mDtRaEkTh0/TDlZWiY11l5h88lifkzNpwgTdxvIa75OREXMnCi1p4iCi47W/DQwNCQwsWbli2uTJZh1GRETENpdTt3F0bOywp9qsKcKETHE8Hh4+5q0VGBgVGbnFWWTWYeQuWTxnxnTdxtNnm3r6+syaIkzIFAcRHao689TnExj4UX6+WW+cuksDrJfvF329HM4ki+Pew4ee5nMCA5MSEzasyTF+AAvfnJuZnq7bePZymz3vANtMsjiIaF+F4O/oVpfT+M1aAe8UEb7MDnPyxdHWcaP172sCA43f5jk9Odn5fpZu4/VbtxsvXTay27AlXxxk4B94gwtiZa7iSIf+b2xfRaWRfYYzKePwtrTe7L4vMDAzPV34eZmEuLgP83J1Gx/2959u/F1sh+FPyjh8mnawSnBBbLvogtimvNzE+HjdxiOe6pGxMbEdhj8p4yCiE3X1/z0WeR/fteL91ClTXneUw+EocxXrNg6PjP5UXSNwDLKQNY4h0QWxSIdjq9+P+ZWcWcvfSEnRbfylsbF3YEDgGGQhaxxEdKjqzNjTpwIDP8zLTYiNfa0h/q9kNU07oO5L0WckjqP70aOq5j8EBk5MSNiQuyb471/69oKMt97Sbaz/888bd+4KzC4RieMgov2iv7tlruLgF8QCL3ydVvy0QbLHceXGv+fb2wUGpk2bVpC5LJjvnJU6LW/ZUt3G9s6uP65eFZhXLnLHQUT7fxX8DQ7ymjbgE9KqrpfrSB9HXeuFznvdAgOXBHoloZOUmLje7wnp7ke9FU3NAjNKR/o4fJp2SPQOsVeupm8uzI/3u6457PGIXSVJR/o4iOhkfYPYgy3FWctnpCRzX42OivqkSP/MnPD6ioxUiGNoeFjswZZIh6PMqb/h77m1gW4uPFFXLxaijFSIg4gOiy6IbcpbkxAXF/BL/q9YfZp2QPSfMBkpEsf9XsEXiYnx8Zv83mslopUZ7749e5ZuY835llv3Rd4NlpQicZCBa9qtzmKH310aAS90hdfcJKVOHH91dp67+pfAwJlTU4qWZ764ZV5agE8Vu3S944LQHWjyUicOMvCbrTtPuEtc/o9fK3l/+cspFUfdhYudd+8JDHxv/rzF8+c/+3Ny0sTS1fpPMr3T0+M5d97o8clGqTg0A1cTzxfEPg30hPTBSo9P6HkZqSkVBxGdqm/oE7oBpzBz2cypU2NjojcXFui+NDg09HNtnfFjk45qcTwZGSmvEVnBdDgcZS7nuuzsyX5PSB+rrXv85IkZRycZ1eIgoiOeM6NCN/1uzM3xf9Txqc93qMpjxnHJR8E4HvT1iS2IJcTFzU5N1W30NJ+72/PQjOOSj4JxkIEFMX/CT18qQM042ru6mq+YcKdWS/vfbR03jO9HUmrGQSadPMbbermOsnEYvzu8q7u7tqXVpMORkrJxGFkQe+ZgRZVPU+ejAQUoGwcR/dLQIPxEWv/g4Em1PhpQgMpxDI+MllcLfp5weY13aHjY3OORjspxENGRM9UCC2KjY2NHlPtoQAGKx9HT13f6bNPrjqpoar7f22vB4UhG8ThI6D4ME9fQpKZ+HNdu3mpquxL89ze1XWnv6rLueCSifhz0mk8vjpNHHYMxLuJovHT5+u3bwXxnx507qn40oIBxEYcW9IfqH6io1Mb3wteLQvP/ytrvmLfumHc83s1lxLg4c4AYxAEsxAEsxAGsiEVut/2z7v16t/DHTOscrfF+9+M+U3YVvF0bN+zauN7OGbN27LRzumdw5gAW4gAW4gAW4gAW4gBWaK5WQAo4cwALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQALcQDrfwz0Mr7sbPX8AAAAAElFTkSuQmCC">
+<title>Mojuan Household</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EEF1EC;
+    --paper-raised: #F8FAF7;
+    --ink: #26313A;
+    --ink-soft: #5B6B70;
+    --line: #D9DED6;
+    --teal: #3E7C7C;
+    --teal-deep: #2C5C5C;
+    --green: #6B8F5C;
+    --green-bg: #E4EBDD;
+    --clay: #B75C3B;
+    --clay-bg: #F3E1D6;
+    --gold: #C99A3E;
+    --gold-bg: #F3E9CE;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 20px 100px;
+  }
+
+  h1, h2, h3 { font-family: 'Newsreader', serif; margin: 0; }
+
+  /* ---- Header ---- */
+  .top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .top h1 { font-size: 30px; font-weight: 500; letter-spacing: -0.01em; }
+  .backup-btn {
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--ink-soft);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .backup-btn:hover { border-color: var(--teal); color: var(--teal-deep); }
+
+  /* ---- Main tabs ---- */
+  .main-tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  .main-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 4px;
+    border-radius: 9px;
+    border: none;
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .main-tab.active { background: var(--ink); color: var(--paper-raised); }
+
+  .tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .tab.active { background: var(--teal-deep); color: white; border-color: var(--teal-deep); }
+
+  .add-btn {
+    background: var(--ink);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  .add-btn:hover { background: var(--teal-deep); }
+  .add-btn.btn-danger-outline { background: none; border: 1px solid var(--clay); color: var(--clay); }
+  .add-btn.btn-danger-outline:hover { background: var(--clay); color: white; }
+
+  /* ---- Calendar layout ---- */
+  .calendar-layout { display: flex; flex-direction: column; gap: 28px; }
+  .calendar-main { width: 100%; }
+  .calendar-side { width: 100%; }
+
+  .month-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .month-nav h2 { font-size: 20px; font-weight: 500; }
+  .month-nav-btns { display: flex; gap: 6px; }
+  .nav-btn {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    width: 32px; height: 32px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .nav-btn:hover { border-color: var(--teal); }
+
+  .week-header { display: grid; grid-template-columns: repeat(7,1fr); gap: 4px; margin-bottom: 4px; }
+  .week-header div { text-align: center; font-size: 11px; color: var(--ink-soft); font-weight: 600; }
+
+  .calendar-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 4px; }
+  .day-cell {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    height: 92px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+  }
+  .day-cell:hover { border-color: var(--teal); }
+  .day-cell.other-month { opacity: 0.35; }
+  .day-cell.today { border-color: var(--teal); border-width: 2px; }
+  .day-num { font-size: 12px; font-weight: 600; color: var(--ink-soft); }
+  .day-cell.today .day-num { color: var(--teal-deep); }
+  .event-chip {
+    font-size: 10px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .event-more { font-size: 10px; color: var(--ink-soft); padding-left: 2px; }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 16px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .week-list-title { font-size: 13px; font-weight: 600; color: var(--ink-soft); margin-bottom: 12px; }
+  .week-event {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .week-event:hover { border-color: var(--teal); }
+  .week-event-name { font-weight: 500; font-size: 14px; margin-bottom: 3px; }
+  .week-event-meta { font-size: 12px; color: var(--ink-soft); }
+
+  .empty {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 14px;
+    padding: 20px 10px;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+  }
+
+  /* ---- Outstanding items table ---- */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper-raised);
+  }
+  table { width: 100%; border-collapse: collapse; min-width: 480px; }
+  table.upkeep-table,
+  table.todo-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+  table.upkeep-table th,
+  table.upkeep-table td,
+  table.todo-table th,
+  table.todo-table td {
+    overflow-wrap: normal;
+    word-break: keep-all;
+    white-space: normal;
+    padding: 8px 6px;
+  }
+  table.upkeep-table .row-actions,
+  table.todo-table .row-actions {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+  table.upkeep-table .done-today-btn {
+    white-space: normal;
+    padding: 5px 8px;
+  }
+  th, td { padding: 11px 14px; text-align: left; font-size: 13.5px; border-bottom: 1px solid var(--line); }
+  th { font-size: 11px; color: var(--ink-soft); font-weight: 600; background: var(--paper); }
+  th.sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
+  th.sortable-th:hover { color: var(--teal-deep); }
+  tr:last-child td { border-bottom: none; }
+  tr.is-done td { opacity: 0.55; text-decoration: line-through; text-decoration-color: var(--ink-soft); }
+  .row-actions { display: flex; gap: 6px; white-space: nowrap; }
+  .icon-btn {
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    width: 28px; height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .icon-btn:hover { border-color: var(--teal); color: var(--teal); }
+  .icon-btn.del-btn:hover { border-color: var(--clay); color: var(--clay); }
+  .icon-btn.is-checked { background: var(--green); border-color: var(--green); color: white; }
+  table.upkeep-table .col-freq {
+    white-space: nowrap;
+    font-size: 12.5px;
+  }
+  .status-completed { background: var(--green-bg); color: #4A6B3D; padding: 2px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 500; display: inline-block; }
+  .status-outstanding { background: var(--clay-bg); color: #8A4429; padding: 2px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 500; display: inline-block; }
+  .done-today-btn {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--teal-deep);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .done-today-btn:hover { background: var(--teal); color: white; border-color: var(--teal); }
+
+  /* ---- Overlay / sheet ---- */
+  .overlay {
+    position: fixed; inset: 0;
+    background: rgba(38,49,58,0.35);
+    display: flex; align-items: flex-end; justify-content: center;
+    z-index: 10;
+  }
+  .sheet {
+    background: var(--paper-raised);
+    width: 100%; max-width: 640px;
+    border-radius: 18px 18px 0 0;
+    padding: 24px 22px 28px;
+    max-height: 88vh;
+    overflow-y: auto;
+  }
+  .sheet h3 { font-size: 20px; font-weight: 500; margin-bottom: 16px; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-size: 12px; color: var(--ink-soft); margin-bottom: 5px; }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    background: white;
+    color: var(--ink);
+  }
+  .field textarea { resize: vertical; min-height: 60px; }
+  .category-btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .category-btn {
+    flex: 1 1 calc(50% - 4px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid var(--line);
+    background: white;
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .category-btn::before {
+    content: '';
+    display: inline-block;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--cat-color);
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .category-btn.active { border-color: var(--cat-color); background: color-mix(in srgb, var(--cat-color) 15%, white); }
+  .mono-textarea {
+    font-family: 'Courier New', monospace !important;
+    font-size: 12px !important;
+    min-height: 220px !important;
+    line-height: 1.4;
+  }
+  .import-error {
+    color: var(--clay);
+    font-size: 13px;
+    margin: -6px 0 14px;
+  }
+  .field-row { display: flex; gap: 10px; }
+  .field-row .field { flex: 1; }
+  .sheet-actions { display: flex; gap: 10px; margin-top: 18px; }
+  .btn-primary, .btn-secondary, .btn-danger {
+    flex: 1; padding: 12px; border-radius: 8px;
+    font-size: 14px; font-weight: 600; cursor: pointer; border: none;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .btn-primary { background: var(--ink); color: white; }
+  .btn-danger { background: var(--clay); color: white; }
+  .btn-secondary { background: none; border: 1px solid var(--line); color: var(--ink-soft); }
+
+  .detail-row { font-size: 14px; margin-bottom: 8px; color: var(--ink); }
+  .detail-row span { color: var(--ink-soft); }
+
+  .loading {
+    text-align: center; padding: 60px 0; color: var(--ink-soft);
+    font-family: 'Newsreader', serif; font-style: italic;
+  }
+
+  /* ---- Grocery ledger ---- */
+  .gl-note { font-size: 13px; color: var(--ink-soft); margin-bottom: 16px; }
+  .gl-note b { color: var(--teal-deep); }
+  .gl-cat-head {
+    font-size: 12px; color: var(--ink-soft); margin: 20px 0 8px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--line);
+  }
+  .gl-cat-head:first-child { margin-top: 0; }
+  .gl-row {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .gl-row.gl-checked { border-color: var(--teal); background: var(--green-bg); }
+  .gl-row-main { flex: 1; min-width: 0; }
+  .gl-row-name { font-size: 14.5px; font-weight: 500; }
+  .gl-row-meta { font-size: 12px; color: var(--ink-soft); margin-top: 3px; }
+  .gl-add-form { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .gl-add-form input {
+    flex: 1 1 140px; padding: 10px 12px; border: 1px solid var(--line);
+    border-radius: 8px; font-size: 14px; font-family: 'Work Sans', sans-serif;
+    background: white; color: var(--ink);
+  }
+  .gl-chip-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 18px; }
+  .gl-chip {
+    flex: none; font-size: 12px; padding: 8px 12px; border-radius: 8px;
+    border: 1px solid var(--line); color: var(--ink-soft); cursor: pointer;
+    background: var(--paper-raised); white-space: nowrap; text-align: left;
+  }
+  .gl-chip .d { display: block; font-weight: 600; color: var(--ink); }
+  .gl-chip .m { display: block; font-size: 11px; margin-top: 2px; }
+  .gl-chip .t { display: block; font-size: 11px; margin-top: 2px; }
+  .gl-chip.active { border-color: var(--teal); background: var(--green-bg); }
+  .gl-trip-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .gl-trip-head .gl-date { font-weight: 600; font-size: 14px; }
+  .gl-trip-head .gl-merchant { font-size: 13px; color: var(--ink-soft); }
+  .gl-line {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px dashed var(--line); gap: 12px;
+  }
+  .gl-line:last-child { border-bottom: none; }
+  .gl-line-name { font-size: 14.5px; }
+  .gl-line-meta { font-size: 12px; color: var(--ink-soft); margin-top: 3px; }
+  .gl-cat-tag {
+    display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 20px;
+    background: var(--gold-bg); color: #8A6A26; margin-right: 6px;
+  }
+  .gl-promo-tag { display: block; font-size: 11px; color: var(--green); margin-top: 3px; }
+  .gl-line-price { font-size: 14.5px; white-space: nowrap; text-align: right; }
+  .gl-trip-total {
+    display: flex; justify-content: space-between; margin-top: 8px; padding-top: 8px;
+    border-top: 1px solid var(--line); font-size: 13.5px;
+  }
+  .gl-trip-total .k { color: var(--ink-soft); }
+  .gl-cat-row { margin-bottom: 16px; }
+  .gl-cat-row-head { display: flex; justify-content: space-between; font-size: 13.5px; margin-bottom: 6px; }
+  .gl-cat-row-head .amt { color: var(--ink-soft); }
+  .gl-bar-bg { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .gl-bar-fill { height: 100%; background: var(--teal); border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <div class="loading">Setting the table…</div>
+</div>
+
+<script>
+const EVENT_CATEGORIES = [
+  { id: 'mogie', label: 'Mogie', color: '#C1503E' },
+  { id: 'juan', label: 'Juan', color: '#3E6E96' },
+  { id: 'gareth', label: 'Gareth', color: '#6B8F5C' },
+  { id: 'family', label: 'Family', color: '#C99A3E' },
+];
+
+const UPKEEP_FREQ = [
+  { id: 'daily', label: 'Daily', days: 1 },
+  { id: 'weekly', label: 'Weekly', days: 7 },
+  { id: 'biweekly', label: 'Bi-Weekly', days: 14 },
+  { id: 'monthly', label: 'Monthly', days: 30 },
+  { id: 'quarterly', label: 'Quarterly', days: 91 },
+  { id: 'biannually', label: 'Bi-Annually', days: 182 },
+  { id: 'yearly', label: 'Yearly', days: 365 },
+];
+
+const DEFAULT_DATA = { events: [], items: [], upkeep: [] };
+const DEFAULT_GROCERY_DATA = { transactions: [], shoppingList: [] };
+
+const GL_EXCLUDE_FROM_SUMMARY = ['Plastic Bag (M)'];
+const GL_PROTEIN_ORDER = ['fish', 'chicken', 'pork', 'tofu', 'dairy', 'others'];
+const GL_PROTEIN_TYPE = {
+  'Salmon': 'fish', 'Yellowtail Fish Ball': 'fish',
+  'Chicken Boneless Leg': 'chicken', 'Chicken Drumstick': 'chicken',
+  'Pork Loin Rib': 'pork', 'Pork Strips': 'pork', 'Minced Pork Collar': 'pork',
+  'Cheese Tofu': 'tofu',
+  'Low Fat Milk': 'dairy',
+};
+const GL_CATEGORY_ORDER = ['Vegetables', 'Fruits', 'Meat / protein / dairy', 'Beauty and personal care', 'Others'];
+
+let data = null;
+let groceryData = null;
+let mainTab = 'calendar'; // 'calendar' | 'grocery' | 'items' | 'upkeep'
+let groceryPanel = 'summary'; // 'summary' | 'shoppinglist' | 'ledger' | 'categories'
+let glSelectedTripId = null;
+let viewYear, viewMonth; // calendar navigation state (0-indexed month)
+let addEventOpen = false;
+let addEventDate = null; // prefilled date when opened from a day cell
+let addEventCategory = null; // selected category while the New Event form is open
+let editingEventId = null; // set when the New Event form is being used to edit an existing event
+let eventDetailId = null;
+let addItemOpen = false;
+let itemsFilter = 'outstanding'; // 'outstanding' | 'resolved'
+let itemsSortCol = null; // 'name' | 'remarks'
+let itemsSortDir = 'asc'; // 'asc' | 'desc'
+let addUpkeepOpen = false;
+let backupOpen = false;
+let backupTab = 'export'; // 'export' | 'import'
+let importError = null;
+let upkeepSortCol = null; // 'name' | 'frequency' | 'lastdone' | 'status' | null (null = original/insertion order)
+let upkeepSortDir = 'asc';
+let confirmDialog = null; // { message, type: 'event'|'item'|'removeAllResolved'|'upkeep', id }
+
+const app = document.getElementById('app');
+
+function todayDate() {
+  const d = new Date();
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+}
+
+function pad(n) { return n.toString().padStart(2, '0'); }
+function ymd(date) { return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}`; }
+function parseYMD(str) {
+  const [y, m, d] = str.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str || '';
+  return div.innerHTML;
+}
+function formatDateLabel(dateStr) {
+  const d = parseYMD(dateStr);
+  return d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+}
+function formatTime(t) {
+  if (!t) return '';
+  const [h, m] = t.split(':').map(Number);
+  const period = h >= 12 ? 'PM' : 'AM';
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return `${h12}:${pad(m)} ${period}`;
+}
+
+const SUPABASE_URL = 'https://pecdeiueydbdrdhyhmuv.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_6EuBpKeVLzOXFikdomlC7Q_ibBN4Cig';
+const DATA_ROW_KEY = 'household-tracker';
+
+async function loadData() {
+  try {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/household_data?key=eq.${DATA_ROW_KEY}&select=value`,
+      { headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` } }
+    );
+    const rows = await res.json();
+    if (Array.isArray(rows) && rows.length > 0) {
+      data = rows[0].value;
+      if (!data.events) data.events = [];
+      if (!data.items) data.items = [];
+      if (!data.upkeep) data.upkeep = [];
+      data.events.forEach(e => {
+        if (!e.startDate) e.startDate = e.date;
+        if (!e.endDate) e.endDate = e.startDate;
+        if (!e.repeat) e.repeat = 'never';
+      });
+    } else {
+      data = DEFAULT_DATA;
+      await saveData();
+    }
+  } catch (e) {
+    console.error('Load failed', e);
+    data = DEFAULT_DATA;
+  }
+}
+
+function daysSinceDateStr(dateStr) {
+  if (!dateStr) return Infinity;
+  return (todayDate().getTime() - parseYMD(dateStr).getTime()) / 86400000;
+}
+
+async function saveData() {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/household_data`, {
+      method: 'POST',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'resolution=merge-duplicates',
+      },
+      body: JSON.stringify({ key: DATA_ROW_KEY, value: data }),
+    });
+  } catch (e) {
+    console.error('Save failed', e);
+  }
+}
+
+async function refreshFromServerIfIdle() {
+  const anyOverlayOpen = addEventOpen || eventDetailId || addItemOpen || addUpkeepOpen || backupOpen || confirmDialog;
+  if (anyOverlayOpen) return;
+  await loadData();
+  await loadGroceryData();
+  render();
+}
+
+async function loadGroceryData() {
+  try {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/household_data?key=eq.grocery-ledger&select=value`,
+      { headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` } }
+    );
+    const rows = await res.json();
+    if (Array.isArray(rows) && rows.length > 0) {
+      groceryData = rows[0].value;
+      if (!groceryData.transactions) groceryData.transactions = [];
+      if (!groceryData.shoppingList) groceryData.shoppingList = [];
+    } else {
+      groceryData = DEFAULT_GROCERY_DATA;
+    }
+  } catch (e) {
+    console.error('Grocery load failed', e);
+    groceryData = DEFAULT_GROCERY_DATA;
+  }
+}
+
+async function saveGroceryData() {
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/household_data`, {
+      method: 'POST',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'resolution=merge-duplicates',
+      },
+      body: JSON.stringify({ key: 'grocery-ledger', value: groceryData }),
+    });
+  } catch (e) {
+    console.error('Grocery save failed', e);
+  }
+}
+
+/* ---------------- Events ---------------- */
+
+function addEvent(name, startDate, endDate, location, time, remarks, category, repeat) {
+  const id = 'e' + Date.now();
+  data.events.push({ id, name, startDate, endDate: endDate || startDate, location, time, remarks, category, repeat: repeat || 'never' });
+  addEventOpen = false;
+  addEventDate = null;
+  render();
+  saveData();
+}
+
+function updateEvent(id, name, startDate, endDate, location, time, remarks, category, repeat) {
+  const ev = data.events.find(e => e.id === id);
+  if (!ev) return;
+  Object.assign(ev, { name, startDate, endDate: endDate || startDate, location, time, remarks, category, repeat: repeat || 'never' });
+  addEventOpen = false;
+  editingEventId = null;
+  addEventCategory = null;
+  render();
+  saveData();
+}
+
+function deleteEvent(id) {
+  data.events = data.events.filter(e => e.id !== id);
+  eventDetailId = null;
+  render();
+  saveData();
+}
+
+function getWeekBounds(date) {
+  const day = date.getDay();
+  const sunday = new Date(date);
+  sunday.setDate(date.getDate() - day);
+  const saturday = new Date(sunday);
+  saturday.setDate(sunday.getDate() + 6);
+  return [sunday, saturday];
+}
+
+/* ---------------- Outstanding items ---------------- */
+
+function addItem(name, remarks) {
+  const id = 'i' + Date.now();
+  data.items.push({ id, name, remarks, done: false, doneAt: null });
+  addItemOpen = false;
+  render();
+  saveData();
+}
+
+function toggleItemDone(id) {
+  const item = data.items.find(i => i.id === id);
+  if (!item) return;
+  item.done = !item.done;
+  item.doneAt = item.done ? Date.now() : null;
+  render();
+  saveData();
+}
+
+function deleteItem(id) {
+  data.items = data.items.filter(i => i.id !== id);
+  render();
+  saveData();
+}
+
+function removeAllResolved() {
+  data.items = data.items.filter(i => !i.done);
+  render();
+  saveData();
+}
+
+/* ---------------- Household upkeep ---------------- */
+
+function addUpkeep(name, frequency) {
+  const id = 'u' + Date.now();
+  data.upkeep.push({ id, name, frequency, lastDone: null, createdAt: ymd(todayDate()) });
+  addUpkeepOpen = false;
+  render();
+  saveData();
+}
+
+function markUpkeepDoneToday(id) {
+  const u = data.upkeep.find(x => x.id === id);
+  if (!u) return;
+  u.lastDone = ymd(todayDate());
+  render();
+  saveData();
+}
+
+function deleteUpkeep(id) {
+  data.upkeep = data.upkeep.filter(u => u.id !== id);
+  render();
+  saveData();
+}
+
+function daysBetween(d1, d2) {
+  return Math.round((d2.getTime() - d1.getTime()) / 86400000);
+}
+
+function upkeepStatus(u) {
+  if (!u.lastDone) return 'outstanding';
+  const today = todayDate();
+  const lastDone = parseYMD(u.lastDone);
+
+  switch (u.frequency) {
+    case 'daily':
+      return ymd(lastDone) === ymd(today) ? 'completed' : 'outstanding';
+
+    case 'weekly': {
+      const [start, end] = getWeekBounds(today);
+      return (lastDone >= start && lastDone <= end) ? 'completed' : 'outstanding';
+    }
+
+    case 'biweekly': {
+      // Periods are anchored to the Sunday of the week this item was added,
+      // then repeat every 14 days from there.
+      const anchorDate = u.createdAt ? parseYMD(u.createdAt) : today;
+      const [anchorSunday] = getWeekBounds(anchorDate);
+      const diffDays = daysBetween(anchorSunday, today);
+      const periodIndex = Math.floor(diffDays / 14);
+      const periodStart = new Date(anchorSunday);
+      periodStart.setDate(periodStart.getDate() + periodIndex * 14);
+      const periodEnd = new Date(periodStart);
+      periodEnd.setDate(periodEnd.getDate() + 13);
+      return (lastDone >= periodStart && lastDone <= periodEnd) ? 'completed' : 'outstanding';
+    }
+
+    case 'monthly':
+      return (lastDone.getFullYear() === today.getFullYear() && lastDone.getMonth() === today.getMonth())
+        ? 'completed' : 'outstanding';
+
+    case 'quarterly': {
+      const q = m => Math.floor(m / 3);
+      return (lastDone.getFullYear() === today.getFullYear() && q(lastDone.getMonth()) === q(today.getMonth()))
+        ? 'completed' : 'outstanding';
+    }
+
+    case 'biannually': {
+      const h = m => Math.floor(m / 6);
+      return (lastDone.getFullYear() === today.getFullYear() && h(lastDone.getMonth()) === h(today.getMonth()))
+        ? 'completed' : 'outstanding';
+    }
+
+    case 'yearly':
+      return lastDone.getFullYear() === today.getFullYear() ? 'completed' : 'outstanding';
+
+    default:
+      return 'outstanding';
+  }
+}
+
+/* ---------------- Render ---------------- */
+
+function render() {
+  if (!data || !groceryData) return;
+
+  app.innerHTML = `
+    <div class="top">
+      <h1>Mojuan Household</h1>
+      <button class="backup-btn" id="backup-btn">Backup</button>
+    </div>
+
+    <div class="main-tabs">
+      <button class="main-tab ${mainTab==='calendar'?'active':''}" data-tab="calendar">Calendar</button>
+      <button class="main-tab ${mainTab==='grocery'?'active':''}" data-tab="grocery">Grocery</button>
+      <button class="main-tab ${mainTab==='items'?'active':''}" data-tab="items">To-Do List</button>
+      <button class="main-tab ${mainTab==='upkeep'?'active':''}" data-tab="upkeep">Household Upkeep</button>
+    </div>
+
+    ${mainTab === 'calendar' ? renderCalendarTab()
+      : mainTab === 'grocery' ? renderGroceryTab()
+      : mainTab === 'items' ? renderItemsTab()
+      : renderUpkeepTab()}
+
+    ${addEventOpen ? renderAddEventForm() : ''}
+    ${eventDetailId ? renderEventDetail() : ''}
+    ${addItemOpen ? renderAddItemForm() : ''}
+    ${addUpkeepOpen ? renderAddUpkeepForm() : ''}
+    ${backupOpen ? renderBackupOverlay() : ''}
+    ${confirmDialog ? renderConfirmDialog() : ''}
+  `;
+
+  attachEvents();
+}
+
+function renderConfirmDialog() {
+  return `
+    <div class="overlay" id="confirm-overlay">
+      <div class="sheet">
+        <h3>Are you sure?</h3>
+        <div class="detail-row">${escapeHtml(confirmDialog.message)}</div>
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="confirm-cancel">Cancel</button>
+          <button class="btn-danger" id="confirm-ok">Yes, remove it</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderBackupOverlay() {
+  const jsonText = JSON.stringify({ household: data, grocery: groceryData }, null, 2);
+  return `
+    <div class="overlay" id="backup-overlay">
+      <div class="sheet">
+        <h3>Backup &amp; Restore</h3>
+        <div class="tabs">
+          <button class="tab ${backupTab==='export'?'active':''}" data-backup-tab="export">Export</button>
+          <button class="tab ${backupTab==='import'?'active':''}" data-backup-tab="import">Import</button>
+        </div>
+        ${backupTab === 'export' ? `
+          <div class="field">
+            <label>Tap the box, select all, and copy — save this somewhere safe before you publish a change.</label>
+            <textarea id="export-json" class="mono-textarea" readonly onclick="this.select()">${escapeHtml(jsonText)}</textarea>
+          </div>
+          <div class="sheet-actions">
+            <button class="btn-secondary" id="close-backup">Close</button>
+          </div>
+        ` : `
+          <div class="field">
+            <label>Paste previously exported data here, then restore it. This replaces everything currently in the tracker.</label>
+            <textarea id="import-json" class="mono-textarea" placeholder="Paste exported JSON here"></textarea>
+          </div>
+          ${importError ? `<div class="import-error">${escapeHtml(importError)}</div>` : ''}
+          <div class="sheet-actions">
+            <button class="btn-secondary" id="close-backup">Cancel</button>
+            <button class="btn-primary" id="do-restore">Restore</button>
+          </div>
+        `}
+      </div>
+    </div>
+  `;
+}
+
+function isOccurrenceStart(event, dateStr) {
+  if (dateStr < event.startDate) return false;
+  const start = parseYMD(event.startDate);
+  const target = parseYMD(dateStr);
+  switch (event.repeat) {
+    case 'daily': return true;
+    case 'weekly': return daysBetween(start, target) % 7 === 0;
+    case 'biweekly': return daysBetween(start, target) % 14 === 0;
+    case 'monthly': return target.getDate() === start.getDate();
+    case 'yearly': return target.getDate() === start.getDate() && target.getMonth() === start.getMonth();
+    default: return dateStr === event.startDate;
+  }
+}
+
+function findOccurrenceCovering(event, dateStr) {
+  const start = parseYMD(event.startDate);
+  const end = parseYMD(event.endDate || event.startDate);
+  const durationDays = Math.max(0, daysBetween(start, end));
+  const target = parseYMD(dateStr);
+  for (let back = 0; back <= durationDays; back++) {
+    const candidate = new Date(target);
+    candidate.setDate(candidate.getDate() - back);
+    const candStr = ymd(candidate);
+    if (candStr < event.startDate) break;
+    if (isOccurrenceStart(event, candStr)) {
+      const occEnd = new Date(candidate);
+      occEnd.setDate(occEnd.getDate() + durationDays);
+      return { start: candStr, end: ymd(occEnd) };
+    }
+  }
+  return null;
+}
+
+function eventOccursOn(event, dateStr) {
+  return !!findOccurrenceCovering(event, dateStr);
+}
+
+function formatDateRangeLabel(startStr, endStr) {
+  if (!endStr || startStr === endStr) return formatDateLabel(startStr);
+  return formatDateLabel(startStr) + ' – ' + formatDateLabel(endStr);
+}
+
+function repeatLabel(repeat) {
+  const map = { never: 'Does not repeat', daily: 'Every day', weekly: 'Every week', biweekly: 'Every 2 weeks', monthly: 'Every month', yearly: 'Every year' };
+  return map[repeat] || 'Does not repeat';
+}
+
+function renderCalendarTab() {
+  const today = todayDate();
+  if (viewYear === undefined) { viewYear = today.getFullYear(); viewMonth = today.getMonth(); }
+
+  const monthStart = new Date(viewYear, viewMonth, 1);
+  const monthLabel = monthStart.toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+
+  const firstWeekday = monthStart.getDay();
+  const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+  const daysInPrevMonth = new Date(viewYear, viewMonth, 0).getDate();
+
+  const cells = [];
+  for (let i = firstWeekday - 1; i >= 0; i--) {
+    cells.push({ day: daysInPrevMonth - i, otherMonth: true, date: new Date(viewYear, viewMonth - 1, daysInPrevMonth - i) });
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    cells.push({ day: d, otherMonth: false, date: new Date(viewYear, viewMonth, d) });
+  }
+  while (cells.length % 7 !== 0 || cells.length < 42) {
+    const nextDay = cells.length - (firstWeekday + daysInMonth) + 1;
+    cells.push({ day: nextDay, otherMonth: true, date: new Date(viewYear, viewMonth + 1, nextDay) });
+  }
+
+  const catMeta = (id) => EVENT_CATEGORIES.find(c => c.id === id) || EVENT_CATEGORIES[EVENT_CATEGORIES.length - 1];
+
+  const gridHtml = cells.map(c => {
+    const dateStr = ymd(c.date);
+    const isToday = dateStr === ymd(today);
+    const dayEvents = data.events
+      .filter(e => eventOccursOn(e, dateStr))
+      .sort((a,b) => (a.time||'').localeCompare(b.time||''));
+    const shown = dayEvents.slice(0, 2);
+    const extra = dayEvents.length - shown.length;
+    return `
+      <div class="day-cell ${c.otherMonth ? 'other-month' : ''} ${isToday ? 'today' : ''}" data-day-cell="${dateStr}">
+        <div class="day-num">${c.day}</div>
+        ${shown.map(e => `<div class="event-chip" data-event-chip="${e.id}" style="background:${catMeta(e.category).color};">${escapeHtml(e.name)}</div>`).join('')}
+        ${extra > 0 ? `<div class="event-more">+${extra} more</div>` : ''}
+      </div>
+    `;
+  }).join('');
+
+  const [weekStart, weekEnd] = getWeekBounds(today);
+  const weekStartStr = ymd(weekStart);
+  const weekEndStr = ymd(weekEnd);
+  const weekOccurrences = {};
+  for (let d = new Date(weekStart); ymd(d) <= weekEndStr; d.setDate(d.getDate() + 1)) {
+    const dStr = ymd(d);
+    data.events.forEach(e => {
+      const occ = findOccurrenceCovering(e, dStr);
+      if (occ) weekOccurrences[e.id + '_' + occ.start] = { event: e, occStart: occ.start, occEnd: occ.end };
+    });
+  }
+  const weekEvents = Object.values(weekOccurrences)
+    .sort((a, b) => a.occStart === b.occStart ? (a.event.time||'').localeCompare(b.event.time||'') : a.occStart.localeCompare(b.occStart));
+
+  return `
+    <button class="add-btn" id="add-event-btn">+ New Event</button>
+    <div class="legend">
+      ${EVENT_CATEGORIES.map(c => `<span class="legend-item"><span class="legend-dot" style="background:${c.color};"></span>${c.label}</span>`).join('')}
+    </div>
+    <div class="calendar-layout">
+      <div class="calendar-main">
+        <div class="month-nav">
+          <h2>${monthLabel}</h2>
+          <div class="month-nav-btns">
+            <button class="nav-btn" id="prev-month">‹</button>
+            <button class="nav-btn" id="next-month">›</button>
+          </div>
+        </div>
+        <div class="week-header">
+          <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+        <div class="calendar-grid">${gridHtml}</div>
+      </div>
+      <div class="calendar-side">
+        <div class="week-list-title">Upcoming events of the week</div>
+        ${weekEvents.length === 0 ? '<div class="empty">Nothing on the calendar this week.</div>' : weekEvents.map(occ => { const e = occ.event; return `
+          <div class="week-event" data-event-chip="${e.id}" style="border-left: 4px solid ${catMeta(e.category).color};">
+            <div class="week-event-name">${escapeHtml(e.name)}</div>
+            <div class="week-event-meta">${formatDateRangeLabel(occ.occStart, occ.occEnd)}${e.time ? ' · ' + formatTime(e.time) : ''}${e.location ? ' · ' + escapeHtml(e.location) : ''}</div>
+          </div>
+        `; }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+const REPEAT_OPTIONS = [
+  { id: 'never', label: 'Never' },
+  { id: 'daily', label: 'Every Day' },
+  { id: 'weekly', label: 'Every Week' },
+  { id: 'biweekly', label: 'Every 2 Weeks' },
+  { id: 'monthly', label: 'Every Month' },
+  { id: 'yearly', label: 'Every Year' },
+];
+
+function renderAddEventForm() {
+  const editing = editingEventId ? data.events.find(e => e.id === editingEventId) : null;
+  const startVal = editing ? editing.startDate : (addEventDate || ymd(todayDate()));
+  const endVal = editing ? editing.endDate : startVal;
+  const nameVal = editing ? editing.name : '';
+  const timeVal = editing ? (editing.time || '') : '';
+  const locationVal = editing ? (editing.location || '') : '';
+  const remarksVal = editing ? (editing.remarks || '') : '';
+  const repeatVal = editing ? (editing.repeat || 'never') : 'never';
+  if (!addEventCategory) addEventCategory = editing ? editing.category : EVENT_CATEGORIES[0].id;
+  return `
+    <div class="overlay" id="add-event-overlay">
+      <div class="sheet">
+        <h3>${editing ? 'Edit Event' : 'New Event'}</h3>
+        <div class="field">
+          <label>Category</label>
+          <div class="category-btn-row">
+            ${EVENT_CATEGORIES.map(c => `
+              <button type="button" class="category-btn ${c.id === addEventCategory ? 'active' : ''}" data-cat="${c.id}" style="--cat-color:${c.color};">${c.label}</button>
+            `).join('')}
+          </div>
+        </div>
+        <div class="field">
+          <label>Event Name</label>
+          <input type="text" id="ev-name" placeholder="e.g. Parent-teacher meeting" value="${escapeHtml(nameVal)}" autofocus>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Start Date</label>
+            <input type="date" id="ev-start-date" value="${startVal}">
+          </div>
+          <div class="field">
+            <label>End Date</label>
+            <input type="date" id="ev-end-date" value="${endVal}">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Time</label>
+            <input type="time" id="ev-time" value="${timeVal}">
+          </div>
+          <div class="field">
+            <label>Location</label>
+            <input type="text" id="ev-location" placeholder="e.g. Community centre" value="${escapeHtml(locationVal)}">
+          </div>
+        </div>
+        <div class="field">
+          <label>Repeat</label>
+          <select id="ev-repeat">
+            ${REPEAT_OPTIONS.map(r => `<option value="${r.id}" ${r.id === repeatVal ? 'selected' : ''}>${r.label}</option>`).join('')}
+          </select>
+        </div>
+        <div class="field">
+          <label>Remarks</label>
+          <textarea id="ev-remarks" placeholder="Anything to remember">${escapeHtml(remarksVal)}</textarea>
+        </div>
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="cancel-event">Cancel</button>
+          <button class="btn-primary" id="confirm-event">${editing ? 'Save changes' : 'Add event'}</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderEventDetail() {
+  const e = data.events.find(ev => ev.id === eventDetailId);
+  if (!e) return '';
+  const cat = EVENT_CATEGORIES.find(c => c.id === e.category) || EVENT_CATEGORIES[EVENT_CATEGORIES.length - 1];
+  return `
+    <div class="overlay" id="event-detail-overlay">
+      <div class="sheet">
+        <h3>${escapeHtml(e.name)}</h3>
+        <div class="detail-row"><span>Category: </span><span class="legend-dot" style="background:${cat.color}; vertical-align:middle; margin-right:5px;"></span>${cat.label}</div>
+        <div class="detail-row"><span>Date: </span>${formatDateRangeLabel(e.startDate, e.endDate)}</div>
+        ${e.repeat && e.repeat !== 'never' ? `<div class="detail-row"><span>Repeats: </span>${repeatLabel(e.repeat)}</div>` : ''}
+        ${e.time ? `<div class="detail-row"><span>Time: </span>${formatTime(e.time)}</div>` : ''}
+        ${e.location ? `<div class="detail-row"><span>Location: </span>${escapeHtml(e.location)}</div>` : ''}
+        ${e.remarks ? `<div class="detail-row"><span>Remarks: </span>${escapeHtml(e.remarks)}</div>` : ''}
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="close-detail">Close</button>
+          <button class="btn-secondary" id="edit-event">Edit</button>
+          <button class="btn-danger" id="delete-event">Delete</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function sortIndicator(col) {
+  if (itemsSortCol !== col) return '';
+  return itemsSortDir === 'asc' ? ' ▲' : ' ▼';
+}
+
+function renderItemsTab() {
+  let items = data.items.filter(i => itemsFilter === 'outstanding' ? !i.done : i.done);
+
+  if (itemsSortCol) {
+    items = items.slice().sort((a, b) => {
+      const av = (a[itemsSortCol] || '').toLowerCase();
+      const bv = (b[itemsSortCol] || '').toLowerCase();
+      const cmp = av.localeCompare(bv);
+      return itemsSortDir === 'asc' ? cmp : -cmp;
+    });
+  }
+
+  const rows = items.map(i => {
+    return `
+      <tr class="${i.done ? 'is-done' : ''}">
+        <td>${escapeHtml(i.name)}</td>
+        <td>${escapeHtml(i.remarks)}</td>
+        <td>
+          <div class="row-actions">
+            <button class="icon-btn ${i.done ? 'is-checked' : ''}" data-toggle-item="${i.id}" title="Mark resolved">✓</button>
+            <button class="icon-btn del-btn" data-del-item="${i.id}" title="Remove">🗑</button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  return `
+    <button class="add-btn" id="add-item-btn">+ New Item</button>
+    <div class="tabs">
+      <button class="tab ${itemsFilter==='outstanding'?'active':''}" data-itemsfilter="outstanding">Outstanding</button>
+      <button class="tab ${itemsFilter==='resolved'?'active':''}" data-itemsfilter="resolved">Resolved</button>
+    </div>
+    ${itemsFilter === 'resolved' && items.length > 0 ? `<button class="add-btn btn-danger-outline" id="remove-all-resolved-btn" style="margin-bottom:14px;">Remove All</button>` : ''}
+    ${items.length === 0 ? `<div class="empty">${itemsFilter === 'outstanding' ? 'Nothing outstanding right now.' : 'Nothing resolved yet.'}</div>` : `
+      <div class="table-wrap">
+        <table class="todo-table">
+          <colgroup>
+            <col style="width:35%"><col style="width:45%"><col style="width:20%">
+          </colgroup>
+          <thead><tr>
+            <th class="sortable-th" data-sort-col="name">Name${sortIndicator('name')}</th>
+            <th class="sortable-th" data-sort-col="remarks">Remarks${sortIndicator('remarks')}</th>
+            <th></th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `}
+  `;
+}
+
+function renderAddItemForm() {
+  return `
+    <div class="overlay" id="add-item-overlay">
+      <div class="sheet">
+        <h3>New To-Do Item</h3>
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="item-name" placeholder="e.g. Fix leaking tap" autofocus>
+        </div>
+        <div class="field">
+          <label>Remarks</label>
+          <textarea id="item-remarks" placeholder="Any details"></textarea>
+        </div>
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="cancel-item">Cancel</button>
+          <button class="btn-primary" id="confirm-item">Add item</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function sortIndicatorUpkeep(col) {
+  if (upkeepSortCol !== col) return '';
+  return upkeepSortDir === 'asc' ? ' ▲' : ' ▼';
+}
+
+function renderUpkeepTab() {
+  let list = data.upkeep.slice();
+
+  if (upkeepSortCol) {
+    list.sort((a, b) => {
+      let av, bv;
+      if (upkeepSortCol === 'name') {
+        av = a.name.toLowerCase(); bv = b.name.toLowerCase();
+      } else if (upkeepSortCol === 'frequency') {
+        av = UPKEEP_FREQ.findIndex(f => f.id === a.frequency);
+        bv = UPKEEP_FREQ.findIndex(f => f.id === b.frequency);
+      } else if (upkeepSortCol === 'lastdone') {
+        av = a.lastDone || ''; bv = b.lastDone || '';
+      } else if (upkeepSortCol === 'status') {
+        av = upkeepStatus(a); bv = upkeepStatus(b);
+      }
+      let cmp = (typeof av === 'number') ? (av - bv) : String(av).localeCompare(String(bv));
+      return upkeepSortDir === 'asc' ? cmp : -cmp;
+    });
+  }
+
+  const rows = list.map(u => {
+    const meta = UPKEEP_FREQ.find(f => f.id === u.frequency) || UPKEEP_FREQ[0];
+    const status = upkeepStatus(u);
+    const lastDoneLabel = u.lastDone ? formatDateLabel(u.lastDone) : '—';
+    return `
+      <tr data-upkeep-id="${u.id}">
+        <td>${escapeHtml(u.name)}</td>
+        <td class="col-freq">${meta.label}</td>
+        <td>${lastDoneLabel}</td>
+        <td>${status === 'completed' ? '<span class="status-completed">Done</span>' : '<span class="status-outstanding">Not Done</span>'}</td>
+        <td>
+          <div class="row-actions">
+            <button class="done-today-btn" data-upkeep-done="${u.id}">Done</button>
+            <button class="icon-btn del-btn" data-del-upkeep="${u.id}" title="Remove">🗑</button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  return `
+    <button class="add-btn" id="add-upkeep-btn">+ New Item</button>
+    ${data.upkeep.length === 0 ? '<div class="empty">Nothing tracked yet — add a recurring upkeep item.</div>' : `
+      <div class="table-wrap">
+        <table class="upkeep-table">
+          <colgroup>
+            <col style="width:22%"><col style="width:26%">
+            <col style="width:18%"><col style="width:16%"><col style="width:18%">
+          </colgroup>
+          <thead><tr>
+            <th class="sortable-th" data-upkeep-sort="name">Name${sortIndicatorUpkeep('name')}</th>
+            <th class="sortable-th col-freq" data-upkeep-sort="frequency">Frequency${sortIndicatorUpkeep('frequency')}</th>
+            <th class="sortable-th" data-upkeep-sort="lastdone">Last Done${sortIndicatorUpkeep('lastdone')}</th>
+            <th class="sortable-th" data-upkeep-sort="status">Status${sortIndicatorUpkeep('status')}</th>
+            <th></th>
+          </tr></thead>
+          <tbody id="upkeep-tbody">${rows}</tbody>
+        </table>
+      </div>
+    `}
+  `;
+}
+
+function renderAddUpkeepForm() {
+  return `
+    <div class="overlay" id="add-upkeep-overlay">
+      <div class="sheet">
+        <h3>New Upkeep Item</h3>
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="upkeep-name" placeholder="e.g. Clean aircon filters" autofocus>
+        </div>
+        <div class="field">
+          <label>Frequency</label>
+          <select id="upkeep-frequency">
+            ${UPKEEP_FREQ.map(f => `<option value="${f.id}">${f.label}</option>`).join('')}
+          </select>
+        </div>
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="cancel-upkeep">Cancel</button>
+          <button class="btn-primary" id="confirm-upkeep">Add item</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/* ---------------- Grocery ledger ---------------- */
+
+function glMoney(n) { return '$' + Number(n || 0).toFixed(2); }
+function glFmtDate(d) {
+  const dt = parseYMD(d);
+  return dt.toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' });
+}
+function glFmtDateShort(d) {
+  const dt = parseYMD(d);
+  return dt.toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+}
+
+function glBuildAggregates(txns) {
+  const byName = {};
+  txns.forEach(t => {
+    t.items.forEach(it => {
+      if (!byName[it.name]) {
+        byName[it.name] = {
+          name: it.name, category: it.category, timesBought: 0, totalSpent: 0,
+          lastPrice: null, lastUnit: null, lastQty: null, lastDate: null, brand: null, origin: null,
+          lastDetail: null, lastSource: null,
+        };
+      }
+      const agg = byName[it.name];
+      agg.timesBought += 1;
+      agg.totalSpent += it.total;
+      if (!agg.lastDate || t.date > agg.lastDate) {
+        agg.lastDate = t.date;
+        agg.lastPrice = it.unitPrice;
+        agg.lastUnit = it.unit;
+        agg.lastQty = it.qty;
+        agg.brand = it.brand || null;
+        agg.origin = it.origin || null;
+        agg.lastDetail = it.detail || it.name;
+        agg.lastSource = t.merchant || null;
+      }
+    });
+  });
+  return Object.keys(byName).map(k => byName[k]);
+}
+
+function glGroupByCategory(list, nameFn) {
+  const groups = {};
+  list.forEach(x => {
+    const cat = nameFn ? nameFn(x) : x.category;
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(x);
+  });
+  ['Vegetables', 'Fruits', 'Others'].forEach(cat => {
+    if (groups[cat]) groups[cat] = groups[cat].slice().sort((a, b) => a.name.localeCompare(b.name));
+  });
+  if (groups['Meat / protein / dairy']) {
+    groups['Meat / protein / dairy'] = groups['Meat / protein / dairy'].slice().sort((a, b) => {
+      const ta = GL_PROTEIN_ORDER.indexOf(GL_PROTEIN_TYPE[a.name] || 'others');
+      const tb = GL_PROTEIN_ORDER.indexOf(GL_PROTEIN_TYPE[b.name] || 'others');
+      if (ta !== tb) return ta - tb;
+      return (b.lastDate || '').localeCompare(a.lastDate || '');
+    });
+  }
+  return GL_CATEGORY_ORDER
+    .map(cat => ({ cat, items: groups[cat] || [] }))
+    .concat(Object.keys(groups).filter(c => GL_CATEGORY_ORDER.indexOf(c) === -1).map(cat => ({ cat, items: groups[cat] })))
+    .filter(g => g.items.length > 0);
+}
+
+function glFindListEntry(name) {
+  return groceryData.shoppingList.find(e => e.name === name) || null;
+}
+function glAddToList(name, category) {
+  if (glFindListEntry(name)) return;
+  groceryData.shoppingList.push({ name, category: category || 'Others', addedDate: ymd(todayDate()) });
+}
+function glRemoveFromList(name) {
+  groceryData.shoppingList = groceryData.shoppingList.filter(e => e.name !== name);
+}
+function glPruneShoppingList(itemByName) {
+  const before = groceryData.shoppingList.length;
+  groceryData.shoppingList = groceryData.shoppingList.filter(e => {
+    const agg = itemByName[e.name];
+    if (!agg || !agg.lastDate) return true;
+    return agg.lastDate <= e.addedDate;
+  });
+  return groceryData.shoppingList.length !== before;
+}
+
+function glToggleChecked(name, category) {
+  if (glFindListEntry(name)) glRemoveFromList(name);
+  else glAddToList(name, category);
+  render();
+  saveGroceryData();
+}
+function glRemoveListEntry(name) {
+  glRemoveFromList(name);
+  render();
+  saveGroceryData();
+}
+function glAddManualItem(name, category) {
+  glAddToList(name, category);
+  render();
+  saveGroceryData();
+}
+
+function renderGroceryTab() {
+  const txns = groceryData.transactions.slice().sort((a, b) => b.date.localeCompare(a.date));
+  const itemList = glBuildAggregates(txns);
+  const itemByName = {};
+  itemList.forEach(it => { itemByName[it.name] = it; });
+  if (glPruneShoppingList(itemByName)) saveGroceryData();
+
+  return `
+    <div class="tabs">
+      <button class="tab ${groceryPanel==='summary'?'active':''}" data-gl-panel="summary">Summary</button>
+      <button class="tab ${groceryPanel==='shoppinglist'?'active':''}" data-gl-panel="shoppinglist">Shopping list</button>
+      <button class="tab ${groceryPanel==='ledger'?'active':''}" data-gl-panel="ledger">Ledger</button>
+      <button class="tab ${groceryPanel==='categories'?'active':''}" data-gl-panel="categories">Categories</button>
+    </div>
+    ${groceryPanel === 'summary' ? renderGlSummary(itemList, itemByName)
+      : groceryPanel === 'shoppinglist' ? renderGlShoppingList(itemByName)
+      : groceryPanel === 'ledger' ? renderGlLedger(txns)
+      : renderGlCategories(txns)}
+  `;
+}
+
+function renderGlSummary(itemList, itemByName) {
+  const n = groceryData.shoppingList.length;
+  const sortedAll = itemList
+    .filter(it => GL_EXCLUDE_FROM_SUMMARY.indexOf(it.name) === -1)
+    .slice().sort((a, b) => (b.lastDate || '').localeCompare(a.lastDate || ''));
+  const groups = glGroupByCategory(sortedAll);
+
+  if (itemList.length === 0) {
+    return '<div class="gl-note">No purchases logged yet.</div><div class="empty">Nothing here yet — receipts scanned in chat will show up automatically.</div>';
+  }
+
+  return `
+    <div class="gl-note"><b>${n}</b> item${n === 1 ? '' : 's'} on your shopping list</div>
+    ${groups.map(g => `
+      <div class="gl-cat-head">${g.cat}</div>
+      ${g.items.map(it => {
+        const checked = !!glFindListEntry(it.name);
+        const metaBits = [];
+        if (it.lastDetail && it.lastDetail !== it.name) metaBits.push(escapeHtml(it.lastDetail));
+        metaBits.push('last bought ' + glFmtDateShort(it.lastDate));
+        if (it.lastSource) metaBits.push(escapeHtml(it.lastSource));
+        const qtyStr = it.lastQty && it.lastUnit ? `${it.lastQty} × ${it.lastUnit}` : (it.lastUnit || '—');
+        metaBits.push(qtyStr);
+        return `
+          <div class="gl-row ${checked ? 'gl-checked' : ''}">
+            <div class="gl-row-main">
+              <div class="gl-row-name">${escapeHtml(it.name)}</div>
+              <div class="gl-row-meta">${metaBits.join(' · ')}</div>
+            </div>
+            <button class="icon-btn ${checked ? 'is-checked' : ''}" data-gl-toggle="${encodeURIComponent(it.name)}" data-gl-cat="${encodeURIComponent(it.category)}" title="Add to shopping list">✓</button>
+          </div>
+        `;
+      }).join('')}
+    `).join('')}
+  `;
+}
+
+function renderGlShoppingList(itemByName) {
+  const list = groceryData.shoppingList;
+  const formHtml = `
+    <div class="gl-add-form">
+      <input type="text" id="gl-new-item-name" placeholder="Add an item…">
+      <button class="btn-primary" id="gl-add-item-btn" style="flex:none;">Add</button>
+    </div>
+  `;
+  if (list.length === 0) {
+    return formHtml + '<div class="empty">Nothing on your list yet.</div>';
+  }
+  const groups = glGroupByCategory(list, e => e.category);
+  return formHtml + groups.map(g => `
+    <div class="gl-cat-head">${g.cat}</div>
+    ${g.items.map(entry => {
+      const agg = itemByName[entry.name];
+      const meta = agg ? 'last bought ' + glFmtDateShort(agg.lastDate) : 'not bought before';
+      return `
+        <div class="gl-row gl-checked">
+          <div class="gl-row-main">
+            <div class="gl-row-name">${escapeHtml(entry.name)}</div>
+            <div class="gl-row-meta">${meta}</div>
+          </div>
+          <button class="icon-btn is-checked" data-gl-remove="${encodeURIComponent(entry.name)}" title="Remove from list">✓</button>
+        </div>
+      `;
+    }).join('')}
+  `).join('');
+}
+
+function renderGlLedger(txns) {
+  if (txns.length === 0) {
+    return '<div class="empty">No receipts logged yet.</div>';
+  }
+  if (!glSelectedTripId || !txns.find(t => t.id === glSelectedTripId)) {
+    glSelectedTripId = txns[0].id;
+  }
+  const chips = txns.map(t => `
+    <button class="gl-chip ${t.id === glSelectedTripId ? 'active' : ''}" data-gl-trip="${t.id}">
+      <span class="d">${glFmtDateShort(t.date)}</span>
+      <span class="m">${escapeHtml(t.merchant || '')}</span>
+      <span class="t">${glMoney(t.total != null ? t.total : (t.items || []).reduce((s, it) => s + (it.total || 0), 0))}</span>
+    </button>
+  `).join('');
+
+  const t = txns.find(x => x.id === glSelectedTripId);
+  const subtotal = t.subtotal != null ? t.subtotal : (t.items || []).reduce((s, it) => s + (it.total || 0), 0);
+  const total = t.total != null ? t.total : subtotal;
+  let subLine = 'Subtotal ' + glMoney(subtotal);
+  if (t.deposit) subLine += ' + ' + glMoney(t.deposit) + ' deposit';
+  if (t.orderDiscount) subLine += ' − ' + glMoney(Math.abs(t.orderDiscount)) + ' voucher';
+
+  return `
+    <div class="gl-chip-row">${chips}</div>
+    <div class="gl-trip-head">
+      <span class="gl-date">${glFmtDate(t.date)}</span>
+      <span class="gl-merchant">${escapeHtml(t.merchant || '')}${t.branch ? ' · ' + escapeHtml(t.branch) : ''}</span>
+    </div>
+    ${(t.items || []).map(it => {
+      const metaBits = [];
+      if (it.brand) metaBits.push(escapeHtml(it.brand));
+      if (it.origin) metaBits.push(escapeHtml(it.origin));
+      if (it.qty && it.unit) metaBits.push(`${it.qty} × ${it.unit}`);
+      else if (it.unit) metaBits.push(escapeHtml(it.unit));
+      return `
+        <div class="gl-line">
+          <div class="gl-row-main">
+            <div class="gl-line-name">${escapeHtml(it.name)}</div>
+            <div class="gl-line-meta"><span class="gl-cat-tag">${escapeHtml(it.category)}</span>${metaBits.join(' · ')}</div>
+            ${it.promo ? `<div class="gl-promo-tag">${escapeHtml(it.promo)}</div>` : ''}
+          </div>
+          <div class="gl-line-price">${glMoney(it.total)}</div>
+        </div>
+      `;
+    }).join('')}
+    <div class="gl-trip-total"><span class="k">${subLine}</span><span>${glMoney(total)}</span></div>
+  `;
+}
+
+function renderGlCategories(txns) {
+  if (txns.length === 0) {
+    return '<div class="empty">No purchases logged yet.</div>';
+  }
+  const byCat = {};
+  let grandTotal = 0;
+  txns.forEach(t => {
+    t.items.forEach(it => {
+      byCat[it.category] = (byCat[it.category] || 0) + it.total;
+      grandTotal += it.total;
+    });
+  });
+  const catList = Object.keys(byCat).map(k => ({ name: k, total: byCat[k] })).sort((a, b) => b.total - a.total);
+  return catList.map(c => {
+    const pct = grandTotal ? (c.total / grandTotal * 100) : 0;
+    return `
+      <div class="gl-cat-row">
+        <div class="gl-cat-row-head"><span>${escapeHtml(c.name)}</span><span class="amt">${glMoney(c.total)} · ${pct.toFixed(0)}%</span></div>
+        <div class="gl-bar-bg"><div class="gl-bar-fill" style="width:${pct.toFixed(1)}%;"></div></div>
+      </div>
+    `;
+  }).join('');
+}
+
+/* ---------------- Events wiring ---------------- */
+
+function attachEvents() {
+  document.querySelectorAll('.main-tab').forEach(btn => {
+    btn.addEventListener('click', () => { mainTab = btn.dataset.tab; render(); });
+  });
+
+  // Calendar nav
+  const prevBtn = document.getElementById('prev-month');
+  const nextBtn = document.getElementById('next-month');
+  if (prevBtn) prevBtn.addEventListener('click', () => {
+    viewMonth--; if (viewMonth < 0) { viewMonth = 11; viewYear--; }
+    render();
+  });
+  if (nextBtn) nextBtn.addEventListener('click', () => {
+    viewMonth++; if (viewMonth > 11) { viewMonth = 0; viewYear++; }
+    render();
+  });
+
+  const addEventBtn = document.getElementById('add-event-btn');
+  if (addEventBtn) addEventBtn.addEventListener('click', () => { addEventOpen = true; addEventDate = null; addEventCategory = null; render(); });
+
+  document.querySelectorAll('[data-day-cell]').forEach(cell => {
+    cell.addEventListener('click', () => {
+      addEventOpen = true;
+      addEventDate = cell.dataset.dayCell;
+      addEventCategory = null;
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-event-chip]').forEach(chip => {
+    chip.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      eventDetailId = chip.dataset.eventChip;
+      render();
+    });
+  });
+
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      addEventCategory = btn.dataset.cat;
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.cat === addEventCategory);
+      });
+    });
+  });
+
+  const cancelEvent = document.getElementById('cancel-event');
+  if (cancelEvent) cancelEvent.addEventListener('click', () => { addEventOpen = false; addEventDate = null; addEventCategory = null; editingEventId = null; render(); });
+
+  const addEventOverlay = document.getElementById('add-event-overlay');
+  if (addEventOverlay) addEventOverlay.addEventListener('click', (e) => {
+    if (e.target === addEventOverlay) { addEventOpen = false; addEventDate = null; addEventCategory = null; editingEventId = null; render(); }
+  });
+
+  const confirmEvent = document.getElementById('confirm-event');
+  if (confirmEvent) confirmEvent.addEventListener('click', () => {
+    const name = document.getElementById('ev-name').value.trim();
+    const startDate = document.getElementById('ev-start-date').value;
+    let endDate = document.getElementById('ev-end-date').value;
+    if (!name || !startDate) return;
+    if (!endDate || endDate < startDate) endDate = startDate;
+    const time = document.getElementById('ev-time').value;
+    const location = document.getElementById('ev-location').value.trim();
+    const category = addEventCategory || EVENT_CATEGORIES[0].id;
+    const repeat = document.getElementById('ev-repeat').value;
+    const remarks = document.getElementById('ev-remarks').value.trim();
+    if (editingEventId) {
+      updateEvent(editingEventId, name, startDate, endDate, location, time, remarks, category, repeat);
+    } else {
+      addEvent(name, startDate, endDate, location, time, remarks, category, repeat);
+    }
+    addEventCategory = null;
+  });
+
+  const closeDetail = document.getElementById('close-detail');
+  if (closeDetail) closeDetail.addEventListener('click', () => { eventDetailId = null; render(); });
+
+  const detailOverlay = document.getElementById('event-detail-overlay');
+  if (detailOverlay) detailOverlay.addEventListener('click', (e) => {
+    if (e.target === detailOverlay) { eventDetailId = null; render(); }
+  });
+
+  const editEventBtn = document.getElementById('edit-event');
+  if (editEventBtn) editEventBtn.addEventListener('click', () => {
+    editingEventId = eventDetailId;
+    eventDetailId = null;
+    addEventCategory = null;
+    addEventOpen = true;
+    render();
+  });
+
+  const deleteEventBtn = document.getElementById('delete-event');
+  if (deleteEventBtn) deleteEventBtn.addEventListener('click', () => {
+    confirmDialog = { message: 'Delete this event?', type: 'event', id: eventDetailId };
+    render();
+  });
+
+  // Outstanding items
+  document.querySelectorAll('[data-sort-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.sortCol;
+      if (itemsSortCol === col) {
+        itemsSortDir = itemsSortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        itemsSortCol = col;
+        itemsSortDir = 'asc';
+      }
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-itemsfilter]').forEach(btn => {
+    btn.addEventListener('click', () => { itemsFilter = btn.dataset.itemsfilter; render(); });
+  });
+
+  const addItemBtn = document.getElementById('add-item-btn');
+  if (addItemBtn) addItemBtn.addEventListener('click', () => { addItemOpen = true; render(); });
+
+  const cancelItem = document.getElementById('cancel-item');
+  if (cancelItem) cancelItem.addEventListener('click', () => { addItemOpen = false; render(); });
+
+  const addItemOverlay = document.getElementById('add-item-overlay');
+  if (addItemOverlay) addItemOverlay.addEventListener('click', (e) => {
+    if (e.target === addItemOverlay) { addItemOpen = false; render(); }
+  });
+
+  const confirmItem = document.getElementById('confirm-item');
+  if (confirmItem) confirmItem.addEventListener('click', () => {
+    const name = document.getElementById('item-name').value.trim();
+    if (!name) return;
+    const remarks = document.getElementById('item-remarks').value.trim();
+    addItem(name, remarks);
+  });
+
+  document.querySelectorAll('[data-toggle-item]').forEach(btn => {
+    btn.addEventListener('click', () => toggleItemDone(btn.dataset.toggleItem));
+  });
+
+  document.querySelectorAll('[data-del-item]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      confirmDialog = { message: 'Remove this item?', type: 'item', id: btn.dataset.delItem };
+      render();
+    });
+  });
+
+  const removeAllBtn = document.getElementById('remove-all-resolved-btn');
+  if (removeAllBtn) removeAllBtn.addEventListener('click', () => {
+    confirmDialog = { message: 'Remove all resolved items? This cannot be undone.', type: 'removeAllResolved', id: null };
+    render();
+  });
+
+  // Household upkeep
+  const addUpkeepBtn = document.getElementById('add-upkeep-btn');
+  if (addUpkeepBtn) addUpkeepBtn.addEventListener('click', () => { addUpkeepOpen = true; render(); });
+
+  const cancelUpkeep = document.getElementById('cancel-upkeep');
+  if (cancelUpkeep) cancelUpkeep.addEventListener('click', () => { addUpkeepOpen = false; render(); });
+
+  const addUpkeepOverlay = document.getElementById('add-upkeep-overlay');
+  if (addUpkeepOverlay) addUpkeepOverlay.addEventListener('click', (e) => {
+    if (e.target === addUpkeepOverlay) { addUpkeepOpen = false; render(); }
+  });
+
+  const confirmUpkeep = document.getElementById('confirm-upkeep');
+  if (confirmUpkeep) confirmUpkeep.addEventListener('click', () => {
+    const name = document.getElementById('upkeep-name').value.trim();
+    if (!name) return;
+    const frequency = document.getElementById('upkeep-frequency').value;
+    addUpkeep(name, frequency);
+  });
+
+  document.querySelectorAll('[data-upkeep-done]').forEach(btn => {
+    btn.addEventListener('click', () => markUpkeepDoneToday(btn.dataset.upkeepDone));
+  });
+
+  document.querySelectorAll('[data-del-upkeep]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      confirmDialog = { message: 'Remove this upkeep item?', type: 'upkeep', id: btn.dataset.delUpkeep };
+      render();
+    });
+  });
+
+  document.querySelectorAll('[data-upkeep-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.upkeepSort;
+      if (upkeepSortCol !== col) {
+        upkeepSortCol = col;
+        upkeepSortDir = 'asc';
+      } else if (upkeepSortDir === 'asc') {
+        upkeepSortDir = 'desc';
+      } else {
+        upkeepSortCol = null;
+        upkeepSortDir = 'asc';
+      }
+      render();
+    });
+  });
+
+  const confirmCancel = document.getElementById('confirm-cancel');
+  if (confirmCancel) confirmCancel.addEventListener('click', () => { confirmDialog = null; render(); });
+
+  const confirmOverlay = document.getElementById('confirm-overlay');
+  if (confirmOverlay) confirmOverlay.addEventListener('click', (e) => {
+    if (e.target === confirmOverlay) { confirmDialog = null; render(); }
+  });
+
+  const confirmOk = document.getElementById('confirm-ok');
+  if (confirmOk) confirmOk.addEventListener('click', () => {
+    const { type, id } = confirmDialog;
+    confirmDialog = null;
+    if (type === 'event') deleteEvent(id);
+    else if (type === 'item') deleteItem(id);
+    else if (type === 'removeAllResolved') removeAllResolved();
+    else if (type === 'upkeep') deleteUpkeep(id);
+  });
+
+  // Backup / restore
+  const backupBtn = document.getElementById('backup-btn');
+  if (backupBtn) backupBtn.addEventListener('click', () => {
+    backupTab = 'export';
+    importError = null;
+    backupOpen = true;
+    render();
+  });
+
+  document.querySelectorAll('[data-backup-tab]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      backupTab = btn.dataset.backupTab;
+      importError = null;
+      render();
+    });
+  });
+
+  const closeBackup = document.getElementById('close-backup');
+  if (closeBackup) closeBackup.addEventListener('click', () => {
+    backupOpen = false;
+    importError = null;
+    render();
+  });
+
+  const backupOverlay = document.getElementById('backup-overlay');
+  if (backupOverlay) backupOverlay.addEventListener('click', (e) => {
+    if (e.target === backupOverlay) { backupOpen = false; importError = null; render(); }
+  });
+
+  const doRestore = document.getElementById('do-restore');
+  if (doRestore) doRestore.addEventListener('click', () => {
+    const raw = document.getElementById('import-json').value.trim();
+    if (!raw) { importError = 'Paste your exported data first.'; render(); return; }
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch (e) {
+      importError = 'That doesn\'t look like valid exported data — check you copied the whole thing.';
+      render();
+      return;
+    }
+    const household = parsed.household || parsed;
+    data = {
+      events: Array.isArray(household.events) ? household.events : [],
+      items: Array.isArray(household.items) ? household.items : [],
+      upkeep: Array.isArray(household.upkeep) ? household.upkeep : [],
+    };
+    if (parsed.grocery) {
+      groceryData = {
+        transactions: Array.isArray(parsed.grocery.transactions) ? parsed.grocery.transactions : [],
+        shoppingList: Array.isArray(parsed.grocery.shoppingList) ? parsed.grocery.shoppingList : [],
+      };
+    }
+    backupOpen = false;
+    importError = null;
+    render();
+    saveData();
+    if (parsed.grocery) saveGroceryData();
+  });
+
+  // Grocery ledger
+  document.querySelectorAll('[data-gl-panel]').forEach(btn => {
+    btn.addEventListener('click', () => { groceryPanel = btn.dataset.glPanel; render(); });
+  });
+
+  document.querySelectorAll('[data-gl-toggle]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const name = decodeURIComponent(btn.dataset.glToggle);
+      const category = decodeURIComponent(btn.dataset.glCat);
+      glToggleChecked(name, category);
+    });
+  });
+
+  document.querySelectorAll('[data-gl-remove]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      glRemoveListEntry(decodeURIComponent(btn.dataset.glRemove));
+    });
+  });
+
+  const glAddBtn = document.getElementById('gl-add-item-btn');
+  if (glAddBtn) glAddBtn.addEventListener('click', () => {
+    const input = document.getElementById('gl-new-item-name');
+    const name = input.value.trim();
+    if (!name) return;
+    const itemList = glBuildAggregates(groceryData.transactions);
+    const lower = name.toLowerCase();
+    const match = itemList.find(it => it.name.toLowerCase() === lower);
+    glAddManualItem(name, match ? match.category : 'Others');
+  });
+
+  document.querySelectorAll('[data-gl-trip]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      glSelectedTripId = chip.dataset.glTrip;
+      render();
+    });
+  });
+}
+
+async function init() {
+  await loadData();
+  await loadGroceryData();
+  render();
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') refreshFromServerIfIdle();
+  });
+  window.addEventListener('focus', refreshFromServerIfIdle);
+}
+
+init();
+</script>
+</body>
+</html>
