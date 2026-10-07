@@ -478,6 +478,7 @@ let addEventDate = null; // prefilled date when opened from a day cell
 let addEventCategory = null; // selected category while the New Event form is open
 let editingEventId = null; // set when the New Event form is being used to edit an existing event
 let eventDetailId = null;
+let dayViewDate = null; // date string (YYYY-MM-DD) when the day's event list is open
 let addItemOpen = false;
 let itemsFilter = 'outstanding'; // 'outstanding' | 'resolved'
 let itemsSortCol = null; // 'name' | 'remarks'
@@ -574,7 +575,7 @@ async function saveData() {
 }
 
 async function refreshFromServerIfIdle() {
-  const anyOverlayOpen = addEventOpen || eventDetailId || addItemOpen || addUpkeepOpen || backupOpen || confirmDialog;
+  const anyOverlayOpen = addEventOpen || eventDetailId || dayViewDate || addItemOpen || addUpkeepOpen || backupOpen || confirmDialog;
   if (anyOverlayOpen) return;
   await loadData();
   await loadGroceryData();
@@ -791,6 +792,7 @@ function render() {
       : renderUpkeepTab()}
 
     ${addEventOpen ? renderAddEventForm() : ''}
+    ${dayViewDate ? renderDayView() : ''}
     ${eventDetailId ? renderEventDetail() : ''}
     ${addItemOpen ? renderAddItemForm() : ''}
     ${addUpkeepOpen ? renderAddUpkeepForm() : ''}
@@ -850,8 +852,21 @@ function renderBackupOverlay() {
   `;
 }
 
+function isRepeating(event) {
+  return !!event.repeat && event.repeat !== 'never';
+}
+
+// For repeating events, start/end define the window the repeat runs in
+// (each occurrence is a single day). If end == start, it repeats indefinitely.
+function repeatEndsOn(event) {
+  if (!isRepeating(event)) return null;
+  return event.endDate && event.endDate > event.startDate ? event.endDate : null;
+}
+
 function isOccurrenceStart(event, dateStr) {
   if (dateStr < event.startDate) return false;
+  const repeatEnd = repeatEndsOn(event);
+  if (repeatEnd && dateStr > repeatEnd) return false;
   const start = parseYMD(event.startDate);
   const target = parseYMD(dateStr);
   switch (event.repeat) {
@@ -867,7 +882,7 @@ function isOccurrenceStart(event, dateStr) {
 function findOccurrenceCovering(event, dateStr) {
   const start = parseYMD(event.startDate);
   const end = parseYMD(event.endDate || event.startDate);
-  const durationDays = Math.max(0, daysBetween(start, end));
+  const durationDays = isRepeating(event) ? 0 : Math.max(0, daysBetween(start, end));
   const target = parseYMD(dateStr);
   for (let back = 0; back <= durationDays; back++) {
     const candidate = new Date(target);
@@ -1059,6 +1074,37 @@ function renderAddEventForm() {
   `;
 }
 
+function renderDayView() {
+  const dayEvents = data.events
+    .filter(e => eventOccursOn(e, dayViewDate))
+    .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+  const catMeta = (id) => EVENT_CATEGORIES.find(c => c.id === id) || EVENT_CATEGORIES[EVENT_CATEGORIES.length - 1];
+  const dateLabel = parseYMD(dayViewDate).toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  return `
+    <div class="overlay" id="day-view-overlay">
+      <div class="sheet">
+        <h3>${dateLabel}</h3>
+        ${dayEvents.length === 0 ? '<div class="empty">No events on this day.</div>' : dayEvents.map(e => {
+          const occ = findOccurrenceCovering(e, dayViewDate);
+          return `
+            <div class="week-event" data-day-event="${e.id}" style="border-left: 4px solid ${catMeta(e.category).color};">
+              <div class="week-event-name">${escapeHtml(e.name)}</div>
+              ${occ && occ.start !== occ.end ? `<div class="week-event-meta">${formatDateRangeLabel(occ.start, occ.end)}</div>` : ''}
+              ${e.time ? `<div class="week-event-meta">Time: ${formatTime(e.time)}</div>` : ''}
+              ${e.location ? `<div class="week-event-meta">Location: ${escapeHtml(e.location)}</div>` : ''}
+              ${e.remarks ? `<div class="week-event-meta">Remarks: ${escapeHtml(e.remarks)}</div>` : ''}
+            </div>
+          `;
+        }).join('')}
+        <div class="sheet-actions">
+          <button class="btn-secondary" id="close-day-view">Close</button>
+          <button class="btn-primary" id="day-view-add">+ Add event</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function renderEventDetail() {
   const e = data.events.find(ev => ev.id === eventDetailId);
   if (!e) return '';
@@ -1068,8 +1114,10 @@ function renderEventDetail() {
       <div class="sheet">
         <h3>${escapeHtml(e.name)}</h3>
         <div class="detail-row"><span>Category: </span><span class="legend-dot" style="background:${cat.color}; vertical-align:middle; margin-right:5px;"></span>${cat.label}</div>
-        <div class="detail-row"><span>Date: </span>${formatDateRangeLabel(e.startDate, e.endDate)}</div>
-        ${e.repeat && e.repeat !== 'never' ? `<div class="detail-row"><span>Repeats: </span>${repeatLabel(e.repeat)}</div>` : ''}
+        ${isRepeating(e)
+          ? `<div class="detail-row"><span>Starts: </span>${formatDateLabel(e.startDate)}</div>
+             <div class="detail-row"><span>Repeats: </span>${repeatLabel(e.repeat)}${repeatEndsOn(e) ? ' until ' + formatDateLabel(e.endDate) : ''}</div>`
+          : `<div class="detail-row"><span>Date: </span>${formatDateRangeLabel(e.startDate, e.endDate)}</div>`}
         ${e.time ? `<div class="detail-row"><span>Time: </span>${formatTime(e.time)}</div>` : ''}
         ${e.location ? `<div class="detail-row"><span>Location: </span>${escapeHtml(e.location)}</div>` : ''}
         ${e.remarks ? `<div class="detail-row"><span>Remarks: </span>${escapeHtml(e.remarks)}</div>` : ''}
@@ -1542,11 +1590,33 @@ function attachEvents() {
 
   document.querySelectorAll('[data-day-cell]').forEach(cell => {
     cell.addEventListener('click', () => {
-      addEventOpen = true;
-      addEventDate = cell.dataset.dayCell;
-      addEventCategory = null;
+      dayViewDate = cell.dataset.dayCell;
       render();
     });
+  });
+
+  document.querySelectorAll('[data-day-event]').forEach(row => {
+    row.addEventListener('click', () => {
+      eventDetailId = row.dataset.dayEvent;
+      render();
+    });
+  });
+
+  const closeDayView = document.getElementById('close-day-view');
+  if (closeDayView) closeDayView.addEventListener('click', () => { dayViewDate = null; render(); });
+
+  const dayViewOverlay = document.getElementById('day-view-overlay');
+  if (dayViewOverlay) dayViewOverlay.addEventListener('click', (e) => {
+    if (e.target === dayViewOverlay) { dayViewDate = null; render(); }
+  });
+
+  const dayViewAdd = document.getElementById('day-view-add');
+  if (dayViewAdd) dayViewAdd.addEventListener('click', () => {
+    addEventDate = dayViewDate;
+    dayViewDate = null;
+    addEventCategory = null;
+    addEventOpen = true;
+    render();
   });
 
   document.querySelectorAll('[data-event-chip]').forEach(chip => {
